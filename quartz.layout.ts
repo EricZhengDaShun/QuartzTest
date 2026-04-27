@@ -45,6 +45,22 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
+  afterBody: [
+    Component.Comments({
+      provider: "giscus",
+      options: {
+        repo: "EricZhengDaShun/QuartzTest",           // 你的帳號/repo
+        repoId: "R_kgDOSNfYEA",                  // 從 giscus.app 取得
+        category: "Announcements",
+        categoryId: "DIC_kwDOSNfYEM4C7xQI",            // 從 giscus.app 取得
+        mapping: "pathname",
+        strict: false,
+        reactionsEnabled: true,
+        inputPosition: "top",                 // 留言框在上或下
+        lang: "zh-TW",
+      },
+    }),
+  ],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
