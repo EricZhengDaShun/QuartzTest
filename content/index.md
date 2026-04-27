@@ -1,6 +1,12 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Eric Note
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+```cpp
+#include <cstdlib>
+
+int main()
+{
+    return EXIT_SUCCESS;
+}
+```
